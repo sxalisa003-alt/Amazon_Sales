@@ -81,6 +81,9 @@ The process concluded with the development of an interactive dashboard designed 
 * Leading Category in Order Volume: Fashion
 * Leading Category in Average Ratings: Books & Beauty
 ##### Insight :
+A category can generate the most revenue and still not have the highest units sold or average rating. This implies that revenue is not reliant on units sold or ratings made by customers. 
+All categories show a tight competition with no significant performance gaps in revenue, sales volume, or ratings. This parity indicated a strategic and well-executed marketing strategy and healthy manufacturing standards that support every product category.
+
 
 
 
