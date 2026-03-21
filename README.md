@@ -66,6 +66,8 @@ The analysis followed a structured workflow to move from raw transactional data 
 
 To move from raw transactional data to business insights, I followed a structured analytical workflow starting with data exploration and validation in MySQL. SQL aggregation queries were used to calculate key performance metrics such as total revenue, order volume, quantities sold, and average ratings, while also segmenting performance by product category, region, and time trends. The results were then imported into Excel where pivot tables were used to further explore patterns and confirm trends. A data model was created to connect the different summary tables, allowing slicers to filter multiple visuals and support interactive analysis. The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project’s main business questions.
 
-## Insights
+## Executive Summary Insights
+
+
 
 #### Key Insights Summary
