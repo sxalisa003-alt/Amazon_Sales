@@ -88,7 +88,20 @@ This balance in performance may reduce revenue risk by preventing overdependence
 #### Regional Performance Analysis
 ##### Insight
 The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, ratings, and review count. North America maintains a consistent rank second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
-Th small performance gaps between Europe and Asia suggests a competitive regional landscape where relatively small performance improvemnets could influence ranking positions. This may indicate potential growth opportunities in these regions.
+The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions. This may indicate potential growth opportunities in these regions.
+
+## Detailed Analysis and Trends
+
+### Growth Analysis Trend
+
+###### Monthly Trends (January 2022-December 2023)
+
+In 2022, the company made Net Revenue of $2 337 059,55, and in 2023, they made net revenue of $2 385 489,69, which is a 2,07% increase in revenue over the 2 years. 
+In February 2022, a 3,62% decline in revenue 
+
+
+
+
 
 
 
