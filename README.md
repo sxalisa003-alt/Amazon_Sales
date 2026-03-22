@@ -80,12 +80,13 @@ The process concluded with the development of an interactive dashboard designed 
 * Leading Category in Revenue Generated: Electronics
 * Leading Category in Order Volume: Fashion
 * Leading Category in Average Ratings: Books & Beauty
-##### Insight:
+##### Insight
 A category can generate the most revenue without having the highest units sold or average rating. This implies that revenue is heavily influenced by product pricing rather than sales volume or customer satisfaction ratings. 
 All categories show a relatively small gap in revenue, sales volume, or ratings, indicating a balanced performance across the categories.
 This balance in performance may reduce revenue risk by preventing overdependence on a single product category.
 
 #### Regional Performance Analysis
+##### Insight
 The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, ratings, and review count. North America maintains a consistent rank second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
 Th small performance gaps between Europe and Asia suggests a competitive regional landscape where relatively small performance improvemnets could influence ranking positions. This may indicate potential growth opportunities in these regions.
 
