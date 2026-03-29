@@ -13,14 +13,14 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
    * What is the average rating per category?
 3. Regional Performance Analysis
    * How much revenue does each region generate?
-   * Which regions show the highest activity based on order volume, average ratings, and number of reviews?
-4. Growth Analysis Trend
-   * How does revenue perform monthly over the timeline?
-   * What trends are revealed by the MoM% change in revenue and order volume across the timeline?
-   * Are there periods of consistent growth or decline?
-5. Seasonal Performance
+   * Which regions show the highest activity based on order volume, average ratings, and number of       reviews?
+4. Seasonal Performance
    * How do categories perform across different seasons in terms of revenue and order volume?
    * Which season experiences peak sales, and which categories thrive in that season?
+5. Growth Analysis Trend
+   * How do revenue and order volume perform monthly over the timeline?
+   * What trends are revealed by the MoM% change in revenue and order volume across the timeline?
+   * Are there periods of consistent growth or decline?
 6. Ratings Analysis
    * How does product rating affect revenue generation and units sold?
    * Do high-rated products consistently generate high revenue and sales?
@@ -90,14 +90,56 @@ This balance in performance may reduce revenue risk by preventing overdependence
 The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, ratings, and review count. North America maintains a consistent rank second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
 The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions. This may indicate potential growth opportunities in these regions.
 
+#### Seasonal Performance
+##### Insight
+Seasonal analysis shows relatively consistent product category performance across both years, with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
+
+Seasonal analysis supports the stability observed in monthly and MoM performance, showing no dramatic shifts in product category performance across seasons. This also suggests that product category performance is not heavily dependent on seasonal shifts but is rather sustained by customer demand.
+
 ## Detailed Analysis and Trends
 
 ### Growth Analysis Trend
 
 ###### Monthly Trends (January 2022-December 2023)
 
-In 2022, the company made Net Revenue of $2 337 059,55, and in 2023, they made net revenue of $2 385 489,69, which is a 2,07% increase in revenue over the 2 years. 
-In February 2022, a 3,62% decline in revenue 
+Across 2022 and 2023, we observe consistent seasonal fluctuations rather than drastic shifts in revenue. Both years began with relatively strong revenue performance in January, followed by a noticeable decline in February, and then recovered in March. A gradual slowdown in performance is observed from April until mid-year, then followed by a recovery period around August. We also observe that revenue fluctuates moderately toward year-end with minor improvements or declines.
+The total revenue generated shows slight and sustainable growth from $2 33M in 2022 to $2 38M in 2023, indicating stable YoY performance rather than aggressive growth. 
+
+Order volume follows a similar trend to revenue, showing steady fluctuation with no significant spikes or drops. February consistently records lower sales in both years, suggesting a seasonal slowdown. MoM comparisons across the two years show a very similar pattern, reinforcing the consistency of demand behaviour.
+
+Both order volume and revenue maintain a consistent pattern across both years, suggesting a stable demand cycle and predictable seasonal purchasing behaviour.
+
+###### MoM (January 2022- December 2023)
+
+MoM analysis shows relatively stable growth behaviour across the years, with no extreme spikes or sharp downturns in either revenue or order volume. Instead, performance increases at a moderate pace and follows predictable corrections.
+
+Both 2022 and 2023 show similar growth trends:
+*  Noticable decline in February following a stronger January performance
+*  Strong recovery in March
+*  Gradual slowdowns between April and mid-year
+*  Recovery periods around July/August
+*  Moderate fluctuations towards year-end
+
+Even though 2023 follows nearly the same structure as 2022, differences appear in the timing of recovery periods. The recovery period occurs slightly earlier in 2023 (July instead of August), suggesting an improvement in the recovery strategy implemented and showing stronger order growth momentum compared to the previous year. 
+
+MoM patterns remain consistent across both years, indicating stable operational performance. and predictable customer demand cycles rather than volatile growth behaviour. The absence of extreme MoM volatility suggests that revenue growth is organic and stable rather than driven by short-term promotional spikes.
+
+### Rating Analysis
+
+Analysis of product rating against revenue, units sold, and order volume shpows that highly ratewd products do not consistently outperfrom lpow rated product. While ratings of 4,0 and 3,5 rank amonmg the stronmghest performers acdross revenue and sales volume, lower ratings sucg as 1,5 alsop appear ampong the top performers in units sold, order volume and revenue egenrated.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 
 
