@@ -71,17 +71,17 @@ The process concluded with the development of an interactive dashboard designed 
 ###### Check the dashboard above for reference. 
 
 #### Overall Business Performance
-* Total Revenue Generated $9 882 00,22
-* Total Order Volume 14 999
-* Total Units Sold 45 306
-* Average Rating 2,99
+* Total Revenue Generated: $9 882 00,22
+* Total Order Volume: 14 999
+* Total Units Sold: 45 306
+* Average Rating: 2,99
 
 #### Product Category Performance 
 * Leading Category in Revenue Generated: Electronics
 * Leading Category in Order Volume: Fashion
 * Leading Category in Average Ratings: Books & Beauty
 ##### Insight
-A category can generate the most revenue without having the highest units sold or average rating. This implies that revenue is heavily influenced by product pricing rather than sales volume or customer satisfaction ratings. 
+A category can generate the most revenue without having the highest units sold or average rating. This suggests that revenue is heavily influenced by product pricing or product mix rather than sales volume or customer ratings. 
 All categories show a relatively small gap in revenue, sales volume, or ratings, indicating a balanced performance across the categories.
 This balance in performance may reduce revenue risk by preventing overdependence on a single product category.
 
@@ -92,10 +92,14 @@ The small performance gaps between Europe and Asia suggest a competitive regiona
 
 #### Seasonal Performance
 ##### Insight
-Seasonal analysis shows relatively consistent product category performance across both years, with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
+Seasonal analysis shows relatively consistent performance across product categories in both years, with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
 
 Seasonal analysis supports the stability observed in monthly and MoM performance, showing no dramatic shifts in product category performance across seasons. This also suggests that product category performance is not heavily dependent on seasonal shifts but is rather sustained by customer demand.
 
+### Payment Method
+
+* Leading Payment Method: Unified Payments Interface (UPI)
+The dataset does not provide sufficient variables, such as customer demographics, transaction success rate, or repeat purchase behaviour, to establish a meaningful relationship between payment methods and sales performance. 
 ## Detailed Analysis and Trends
 
 ### Growth Analysis Trend
@@ -122,15 +126,42 @@ Both 2022 and 2023 show similar growth trends:
 
 Even though 2023 follows nearly the same structure as 2022, differences appear in the timing of recovery periods. The recovery period occurs slightly earlier in 2023 (July instead of August), suggesting an improvement in the recovery strategy implemented and showing stronger order growth momentum compared to the previous year. 
 
-MoM patterns remain consistent across both years, indicating stable operational performance. and predictable customer demand cycles rather than volatile growth behaviour. The absence of extreme MoM volatility suggests that revenue growth is organic and stable rather than driven by short-term promotional spikes.
+MoM patterns remain consistent across both years, indicating stable operational performance and predictable customer demand cycles rather than volatile growth behaviour. The absence of extreme MoM volatility suggests that revenue growth is organic and stable rather than driven by short-term promotional spikes.
 
 ### Rating Analysis
 
-Analysis of product rating against revenue, units sold, and order volume shpows that highly ratewd products do not consistently outperfrom lpow rated product. While ratings of 4,0 and 3,5 rank amonmg the stronmghest performers acdross revenue and sales volume, lower ratings sucg as 1,5 alsop appear ampong the top performers in units sold, order volume and revenue egenrated.
+Analysis of product rating against revenue, units sold, and order volume shows that highly rated products do not consistently outperform low-rated products. While ratings of 4,0 and 3,5 rank among the strongest performers across revenue and sales volume, lower ratings such as 1,5 also appear among the top performers in units sold, order volume, and revenue generated.
+
+Lower-rated products among  the top sellers suggest that purchasing decisions may be driven by price, availability, or necessity rather than customer satisfaction alone.
+
+### Discount Effectiveness Analysis
+
+Moderate discount levels produce stronger sales performance compared to lower discount levels, such as 0% and 10%. Units sold tend to increase as discounts increase, suggesting customers are responsive to price reductions.
+Revenue performance shows a slightly different pattern. Higher discount bands generate more revenue than lower discount bands. The difference between the revenue generated by the different discount tiers is not too significant, which indicates that revenue remains relatively stable even with changes in discounts.
+
+The discount tiers also reveal an interesting pattern. 0% discount falls among the low-performing discount tiers. 5% discount performs strongly, and then 10% discount drops again. Then we have the high-tier discounts (15%-30%). This pattern suggests that discount performance may not be purely linear.
+
+Two high-performing discount tiers were observed at approximately 5% and 30%. 
+                
 
 
+### Conclusion
+This analysis has revealed that Amazon is stable and has a predictable performance pattern rather than volatile growth patterns. Revenue and order trends remain consistent in both years, suggesting a mature demand cycle and steady customer purchasing behavior. 
+* Product category performance shows balanced revenue distribution, reducing reliance on a single category and strengthening  the stability of revenue.
+* In regional analysis, we highlighted the Middle East as the strongest market, and Europe and Asia show competitiveness, suggesting future growth opportunities.
+* Customer ratings or reviews seem to have very limited influence on sales performance (possibly due to the insufficient variables, i.e., review content), suggesting that purchasing decisions may be driven by pricing and product demand rather than customer satisfaction alone.
+* Discount analysis shows that both small (5%) and big (30%) discount strategies can effectively drive sales performance, indicating flexibility in promotional strategy design.
 
- 
+Overall, the dataset suggests that Amazon has reached maturity stage and is generating stable revenue and has predictable demand patterns, diversified product performance, and a responsive pricing strategy.
+
+### Recommendations
+
+* Implement targeted promotions or marketing campaigns during the historically weaker months to stimulate revenue generation and smooth out fluctuations in revenue.
+* Investigate the reason behind the lower average ratings to identify potential product quality or service improvement opportunities.
+* Investigate the Asian and European markets further to identify small performance gaps that could be addressed through localized marketing or logistics improvements.
+* 
+* Future analysis would benefit from Customer demographic data, Profit margin data, and Customer retention metrics.
+
 
 
 
