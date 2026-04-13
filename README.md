@@ -122,6 +122,8 @@ Order volume follows a similar trend to revenue, showing steady fluctuation with
 
 Both order volume and revenue maintain a consistent pattern across both years, suggesting a stable demand cycle and predictable seasonal purchasing behaviour.
 
+
+![MoM](https://github.com/sxalisa003-alt/Amazon_Sales/blob/ea46298537bc06931ca5b1d8776bd71c9e3ec949/Images/MoM.png)
 ###### Month-Over-Month Growth (January 2022- December 2023)
 
 MoM analysis shows relatively stable growth behaviour across the years, with no extreme spikes or sharp downturns in either revenue or order volume. Instead, performance increases at a moderate pace and follows predictable corrections.
