@@ -113,7 +113,7 @@ The dataset does not provide sufficient variables, such as customer demographics
 ### Growth Analysis Trend
 
 ###### Monthly Trends (January 2022-December 2023)
-![MonthlyTrends]()
+![MonthlyTrends](https://github.com/sxalisa003-alt/Amazon_Sales/blob/076725b5724905477f422013dca5195aa83fff00/Images/Monthly%20Trend.png)
 
 Across 2022 and 2023, we observe consistent seasonal fluctuations rather than drastic shifts in revenue. Both years began with relatively strong revenue performance in January, followed by a noticeable decline in February, and then recovered in March. A gradual slowdown in performance is observed from April until mid-year, then followed by a recovery period around August. We also observe that revenue fluctuates moderately toward year-end with minor improvements or declines.
 The total revenue generated shows slight and sustainable growth from $2 33M in 2022 to $2 38M in 2023, indicating stable YoY performance rather than aggressive growth. 
