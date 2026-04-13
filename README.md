@@ -33,7 +33,6 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
 
   ## Tool 
   * MySQL Workbench
-  * Visual Studio Code
   * Microsoft Excel
   * Github
   * Microsoft PowerPivot
