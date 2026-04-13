@@ -73,7 +73,7 @@ The process concluded with the development of an interactive dashboard designed 
 
 
 ## Executive Summary Insights
-###### Check the dashboard above for reference or [View AmazonSales Dashboard](Amazon Sales Dashboard.xlsx)
+###### Check the dashboard above for reference or [View Interactive Dashboard (Excel)](./Amazon Sales Dashboard.xlsx)
 
 
 #### Overall Business Performance
