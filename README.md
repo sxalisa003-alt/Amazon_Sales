@@ -68,12 +68,12 @@ Using Excel PowerPivot, a data model was created to connect the different summar
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
 
 ## Dashboard
-![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/62541150d8fff44ef28d191b3128d327f41a3025/Images/AmazonSalesDashboard.png)
 
+![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8ff8cd3bac6dee2b0c8c1b331b468e0ebb84b145/Images/AmazonSalesDash.png)
 
 
 ## Executive Summary Insights
-###### Check the dashboard above for reference. 
+###### Check the dashboard above for reference or [View AmazonSales Dashboard]
 
 #### Overall Business Performance
 * Total Revenue Generated: $9 882 00,44
