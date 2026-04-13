@@ -67,7 +67,9 @@ Each of the query results was imported into Excel, where pivot tables and charts
 Using Excel PowerPivot, a data model was created to connect the different summary tables, allowing slicers to filter multiple visuals and support interactive analysis.
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
 
-## DASHBOARD
+## Dashboard
+![Dashboard]()
+
 
 
 ## Executive Summary Insights
