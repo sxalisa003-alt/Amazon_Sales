@@ -68,7 +68,7 @@ Using Excel PowerPivot, a data model was created to connect the different summar
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
 
 ## Dashboard
-![Dashboard]()
+![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/0ecdb651d01e99a9d1dc1a05de9c6b60d496d748/Images/AmazonSalesDashboard.png)
 
 
 
@@ -113,6 +113,7 @@ The dataset does not provide sufficient variables, such as customer demographics
 ### Growth Analysis Trend
 
 ###### Monthly Trends (January 2022-December 2023)
+![MonthlyTrends]()
 
 Across 2022 and 2023, we observe consistent seasonal fluctuations rather than drastic shifts in revenue. Both years began with relatively strong revenue performance in January, followed by a noticeable decline in February, and then recovered in March. A gradual slowdown in performance is observed from April until mid-year, then followed by a recovery period around August. We also observe that revenue fluctuates moderately toward year-end with minor improvements or declines.
 The total revenue generated shows slight and sustainable growth from $2 33M in 2022 to $2 38M in 2023, indicating stable YoY performance rather than aggressive growth. 
@@ -121,7 +122,7 @@ Order volume follows a similar trend to revenue, showing steady fluctuation with
 
 Both order volume and revenue maintain a consistent pattern across both years, suggesting a stable demand cycle and predictable seasonal purchasing behaviour.
 
-###### MoM (January 2022- December 2023)
+###### Month-Over-Month Growth (January 2022- December 2023)
 
 MoM analysis shows relatively stable growth behaviour across the years, with no extreme spikes or sharp downturns in either revenue or order volume. Instead, performance increases at a moderate pace and follows predictable corrections.
 
