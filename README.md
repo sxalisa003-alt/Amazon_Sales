@@ -13,7 +13,7 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
    * What is the average rating per category?
 3. Regional Performance Analysis
    * How much revenue does each region generate?
-   * Which regions show the highest activity based on order volume, average ratings, and number of       reviews?
+   * Which regions show the highest activity based on order volume, average ratings, and number of reviews?
 4. Seasonal Performance
    * How do categories perform across different seasons in terms of revenue and order volume?
    * Which season experiences peak sales, and which categories thrive in that season?
@@ -60,11 +60,18 @@ Despite using a subset of the data, the sample size may remain sufficient to ide
 This importing error has highlighted the importance of choosing efficient data ingestion methods when working with large datasets.
 
 ## Data Wrangling Process
+![DataModel]()
+
+To enable seamless interactivity across the dashboard, the multiple query result tables were transformed from a flat table analysis struvture to a relational data model using Excel Power Pivot. Used power pivot to create a mutli-fact relationship model centered around three lookup tables: dim_Region, dim_ProductCategory and dim_Year. By establishing 1-to-many relationships, I ensured that a single filter selection will filter across all the different SQL query outputs simultaneously.
+
 
 SQL was used to validate the data and transform it into valuable insights. SQL aggregation queries were used to calculate performance metrics such as total revenue, units sold, order volume, and average ratings, while also segmenting performance by region, product category, and time. 
 Each of the query results was imported into Excel, where pivot tables and charts were used to explore patterns and confirm trends.
 Using Excel PowerPivot, a data model was created to connect the different summary tables, allowing slicers to filter multiple visuals and support interactive analysis.
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
+
+#### Data Modelling Process
+
 
 ## Dashboard
 
@@ -112,7 +119,7 @@ The dataset does not provide sufficient variables, such as customer demographics
 
 ### Growth Analysis Trend
 
-###### Monthly Trends (January 2022-December 2023)
+#### Monthly Trends (January 2022-December 2023)
 ![MonthlyTrends](https://github.com/sxalisa003-alt/Amazon_Sales/blob/076725b5724905477f422013dca5195aa83fff00/Images/Monthly%20Trend.png)
 
 Across 2022 and 2023, we observe consistent seasonal fluctuations rather than drastic shifts in revenue. Both years began with relatively strong revenue performance in January, followed by a noticeable decline in February, and then recovered in March. A gradual slowdown in performance is observed from April until mid-year, then followed by a recovery period around August. We also observe that revenue fluctuates moderately toward year-end with minor improvements or declines.
@@ -122,7 +129,7 @@ Order volume follows a similar trend to revenue, showing steady fluctuation with
 
 Both order volume and revenue maintain a consistent pattern across both years, suggesting a stable demand cycle and predictable seasonal purchasing behaviour.
 
-###### Month-Over-Month Growth (January 2022- December 2023)
+#### Month-Over-Month Growth (January 2022- December 2023)
 ![MoM](https://github.com/sxalisa003-alt/Amazon_Sales/blob/ea46298537bc06931ca5b1d8776bd71c9e3ec949/Images/MoM.png)
 
 MoM analysis shows relatively stable growth behaviour across the years, with no extreme spikes or sharp downturns in either revenue or order volume. Instead, performance increases at a moderate pace and follows predictable corrections.
