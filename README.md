@@ -1,7 +1,7 @@
 # Amazon Sales Project | SQL & Excel Bi
 
 ## Project Overview
-This project examines an Amazon Sales dataset to investigate how product categories, regions, payment methods, and time trends affect revenue generation, order volume, and units sold. Through this examination, we will also investigate the connection between elements like ratings, discounts, and the number of reviews with the sales outcomes. The objective is to reveal essential business factors and trends that can help in making informed decisions.
+This project examines an Amazon Sales dataset to investigate how product categories, regions, payment methods, and time trends affect revenue generation, order volume, and units sold. Through this examination, we will also investigate the connection between elements like ratings, discounts, and the number of reviews with the sales outcomes. The objective is to reveal essential factors and trends that can help in making informed decisions.
 This project combines data cleaning, EDA, and dashboard creation to transform raw sales data into meaningful and actionable insights.
 
 ## Business Questions
@@ -38,10 +38,9 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
   * Microsoft PowerPivot
 
   ## Skills
-  * Database Management
+  *  Database Management
   *  Data Modeling
   *  Data Visualization
-  *  Version Control
   *  Exploratory Data Analysis
   *  Reporting
   *  Dashboard Development
@@ -54,23 +53,21 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
   ###### The Data Validation Script is available in the project repository
 
   ### Constraints
-  For the project, I used 14,999 records from the 50,000 records in the original dataset due to the importing technique I used, MySQL Import Wizard. This method generates individual INSERT INTO statements for each record, therefore slowing down the loading process. A much more efficient approach would have been to use the LOAD DATA INFILE command, which allows bulk loading and is better for large datasets. 
+For the project, I used 14,999 records from the 50,000 records in the original dataset due to the importing technique I used, MySQL Import Wizard. This method generates individual INSERT INTO statements for each record, therefore slowing down the loading process. A much more efficient approach would have been to use the LOAD DATA INFILE command, which allows bulk loading and is better for large datasets. 
 Despite using a subset of the data, the sample size may remain sufficient to identify meaningful patterns and trends.
 
 This importing error has highlighted the importance of choosing efficient data ingestion methods when working with large datasets.
 
 ## Data Wrangling Process
-![DataModel]()
-
-To enable seamless interactivity across the dashboard, the multiple query result tables were transformed from a flat table analysis struvture to a relational data model using Excel Power Pivot. Used power pivot to create a mutli-fact relationship model centered around three lookup tables: dim_Region, dim_ProductCategory and dim_Year. By establishing 1-to-many relationships, I ensured that a single filter selection will filter across all the different SQL query outputs simultaneously.
-
-
-SQL was used to validate the data and transform it into valuable insights. SQL aggregation queries were used to calculate performance metrics such as total revenue, units sold, order volume, and average ratings, while also segmenting performance by region, product category, and time. 
+SQL was used to validate the data and transform it into valuable insights. SQL aggregation queries were used to calculate performance metrics such as total revenue, units sold, order volume, and average ratings, while also segmenting performance by region, product category, and date. 
 Each of the query results was imported into Excel, where pivot tables and charts were used to explore patterns and confirm trends.
 Using Excel PowerPivot, a data model was created to connect the different summary tables, allowing slicers to filter multiple visuals and support interactive analysis.
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
 
 #### Data Modelling Process
+![DataModel](https://github.com/sxalisa003-alt/Amazon_Sales/blob/7ea97de30f8e06fe566093ca67a46bd07a05fd16/Images/DiagramAmazon.png)
+
+To enable seamless interactivity across the dashboard, the multiple query result tables were transformed from a flat table analysis structure to a relational data model using Excel Power Pivot. I used Power Pivot to create a multi-fact relationship model centered around three lookup tables: dim_Region, dim_ProductCategory, and dim_Year. By establishing 1-to-many relationships, I ensured that a single filter selection would filter across all the different SQL query outputs simultaneously.                      
 
 
 ## Dashboard
