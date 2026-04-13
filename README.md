@@ -67,34 +67,40 @@ Each of the query results was imported into Excel, where pivot tables and charts
 Using Excel PowerPivot, a data model was created to connect the different summary tables, allowing slicers to filter multiple visuals and support interactive analysis.
 The process concluded with the development of an interactive dashboard designed to highlight key performance drivers and answer the project's main business questions.
 
+## DASHBOARD
+
+
 ## Executive Summary Insights
 ###### Check the dashboard above for reference. 
 
 #### Overall Business Performance
-* Total Revenue Generated: $9 882 00,22
+* Total Revenue Generated: $9 882 00,44
 * Total Order Volume: 14 999
 * Total Units Sold: 45 306
 * Average Rating: 2,99
 
 #### Product Category Performance 
-* Leading Category in Revenue Generated: Electronics
-* Leading Category in Order Volume: Fashion
-* Leading Category in Average Ratings: Books & Beauty
+* Leading Category in Revenue Generation: Electronics at $801 318,61
+* Leading Category in Units Sold: Fashion at $7 678
+* Leading Category in Average Ratings: Books at 3,01 
 ##### Insight
-A category can generate the most revenue without having the highest units sold or average rating. This suggests that revenue is heavily influenced by product pricing or product mix rather than sales volume or customer ratings. 
-All categories show a relatively small gap in revenue, sales volume, or ratings, indicating a balanced performance across the categories.
-This balance in performance may reduce revenue risk by preventing overdependence on a single product category.
+A category can generate the most revenue without having the highest units sold or average rating. This suggests that revenue is heavily influenced by the pricing of products or product mix rather than sales volume or customer ratings. 
+All categories show a relatively small gap in revenue, units sold, or ratings, indicating a balanced performance across the categories, which may reduce revenue risk by preventing overdependence on a single category.
+
 
 #### Regional Performance Analysis
+* Leading Region in Revenue Distribution: Middle East at $1 202 154,5
+* Leading Region in Order Volume: Middle East at 3804
+* Leading Region in Total Customer Reviews submitted: Middle East at 943371
 ##### Insight
-The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, ratings, and review count. North America maintains a consistent rank second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
-The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions. This may indicate potential growth opportunities in these regions.
+The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, and review count. North America consistently ranks second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
+The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions, indicating potential growth opportunities in both regionsns. 
 
 #### Seasonal Performance
 ##### Insight
-Seasonal analysis shows relatively consistent performance across product categories in both years, with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
+Seasonal analysis shows relatively consistent performance across product categories in both years(2022 and 2023), with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
 
-Seasonal analysis supports the stability observed in monthly and MoM performance, showing no dramatic shifts in product category performance across seasons. This also suggests that product category performance is not heavily dependent on seasonal shifts but is rather sustained by customer demand.
+Clustering revenue into seasons supports the stability observed in the monthly and month-over-month performance analysis, with no dramatic shifts in product category performance. This suggests that product category performance is not heavily dependent on seasonal shifts but is rather sustained by customer demand.
 
 ### Payment Method
 
@@ -146,20 +152,19 @@ Two high-performing discount tiers were observed at approximately 5% and 30%.
 
 
 ### Conclusion
-This analysis has revealed that Amazon is stable and has a predictable performance pattern rather than volatile growth patterns. Revenue and order trends remain consistent in both years, suggesting a mature demand cycle and steady customer purchasing behavior. 
+The analysis has revealed that Amazon is stable and has a predictable performance pattern rather than volatile growth patterns. Revenue and order trends remain consistent in both years, suggesting a mature demand cycle and steady customer purchasing behavior. 
 * Product category performance shows balanced revenue distribution, reducing reliance on a single category and strengthening  the stability of revenue.
-* In regional analysis, we highlighted the Middle East as the strongest market, and Europe and Asia show competitiveness, suggesting future growth opportunities.
+* Regional analysis highlighted the Middle East as the strongest market, and Europe and Asia show competitiveness, suggesting future growth opportunities.
 * Customer ratings or reviews seem to have very limited influence on sales performance (possibly due to the insufficient variables, i.e., review content), suggesting that purchasing decisions may be driven by pricing and product demand rather than customer satisfaction alone.
 * Discount analysis shows that both small (5%) and big (30%) discount strategies can effectively drive sales performance, indicating flexibility in promotional strategy design.
 
-Overall, the dataset suggests that Amazon has reached maturity stage and is generating stable revenue and has predictable demand patterns, diversified product performance, and a responsive pricing strategy.
+Overall, the dataset suggests that Amazon has reached maturity stage and is generating stable revenue, has predictable demand patterns, diversified product performance, and a responsive pricing strategy.
 
 ### Recommendations
 
 * Implement targeted promotions or marketing campaigns during the historically weaker months to stimulate revenue generation and smooth out fluctuations in revenue.
 * Investigate the reason behind the lower average ratings to identify potential product quality or service improvement opportunities.
 * Investigate the Asian and European markets further to identify small performance gaps that could be addressed through localized marketing or logistics improvements.
-* 
 * Future analysis would benefit from Customer demographic data, Profit margin data, and Customer retention metrics.
 
 
