@@ -73,7 +73,8 @@ The process concluded with the development of an interactive dashboard designed 
 
 
 ## Executive Summary Insights
-###### Check the dashboard above for reference or [View AmazonSales Dashboard]
+###### Check the dashboard above for reference or [View AmazonSales Dashboard](Amazon Sales Dashboard.xlsx)
+
 
 #### Overall Business Performance
 * Total Revenue Generated: $9 882 00,44
