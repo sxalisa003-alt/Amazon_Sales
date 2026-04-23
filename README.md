@@ -52,6 +52,47 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
   An SQL script was run to validate the dataset and ensure that it was suitable for analysis. The script ran checks to identify missing values, duplicates, validate numeric fields like revenue and quantity sold, and verify data consistency. The dataset was found to have no significant anomalies or inconsistencies; no major data cleaning or transformation was needed.
   ###### The Data Validation Script is available in the project repository
 
+```
+  #Structure Scan
+SELECT * FROM amazonsales_project.amazon_sales_dataset
+LIMIT 10;
+
+#Null Scan
+SELECT COUNT(*) AS total_rows,
+COUNT(order_id) as order_id_count,
+COUNT(product_id) as product_id_count,
+COUNT(price) as price_count,
+COUNT(total_revenue) as total_revenue_count
+ from amazonsales_project.amazon_sales_dataset;
+ 
+ #Scan Duplicates
+ SELECT order_id, COUNT(*) AS count
+ from amazonsales_project.amazon_sales_dataset
+ GROUP by order_id
+ HAVING COUNT(*) > 1;
+ 
+ #Validate TotalRev Calculation
+ SELECT * FROM amazonsales_project.amazon_sales_dataset
+ where total_revenue!=discounted_price*quantity_sold;
+ 
+ #Validate Set Inbounds Values
+ SELECT  min(rating),max(rating), min(price),max(price),min(discount_percent),max(discount_percent)
+ FROM amazonsales_project.amazon_sales_dataset;
+ 
+ #ValidateDate
+ SELECT min(order_date), max(order_date)
+FROM amazonsales_project.amazon_sales_dataset;
+ 
+ SELECT DISTINCT year(order_date)
+ FROM amazonsales_project.amazon_sales_dataset
+ ORDER BY 1;
+ 
+ #StandardizationCheck
+ SELECT Distinct(product_category)  FROM amazonsales_project.amazon_sales_dataset;
+ Select Distinct(customer_region) FROM amazonsales_project.amazon_sales_dataset;
+ Select Distinct(payment_method) FROM amazonsales_project.amazon_sales_dataset;
+ ```
+
   ### Constraints
 For the project, I used 14,999 records from the 50,000 records in the original dataset due to the importing technique I used, MySQL Import Wizard. This method generates individual INSERT INTO statements for each record, therefore slowing down the loading process. A much more efficient approach would have been to use the LOAD DATA INFILE command, which allows bulk loading and is better for large datasets. 
 Despite using a subset of the data, the sample size may remain sufficient to identify meaningful patterns and trends.
@@ -100,15 +141,41 @@ All categories show a relatively small gap in revenue, units sold, or ratings, i
 * Leading Region in Total Customer Reviews submitted: Middle East at 943371
 ##### Insight
 The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, and review count. North America consistently ranks second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
-The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions, indicating potential growth opportunities in both regionsns. 
+The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions, indicating potential growth opportunities in both regions. 
 
 #### Seasonal Performance
+```
+SELECT
+
+YEAR(order_date) AS year,
+
+CASE
+WHEN MONTH(order_date) IN (12,1,2) THEN 'Winter'
+WHEN MONTH(order_date) IN (3,4,5) THEN 'Spring'
+WHEN MONTH(order_date) IN (6,7,8) THEN 'Summer'
+WHEN MONTH(order_date) IN (9,10,11) THEN 'Autumn'
+END AS season,
+
+SUM(total_revenue) AS seasonal_revenue,
+product_category,
+COUNT(order_id) AS seasonal_orders
+
+FROM amazon_sales_dataset
+
+GROUP BY year, season, product_category
+
+ORDER BY year, seasonal_revenue DESC;
+```
 ##### Insight
 Seasonal analysis shows relatively consistent performance across product categories in both years(2022 and 2023), with Summer and Autumn generally generating the highest revenue and order activity. Electronics, Fashion, and Home & Kitchen categories frequently appear among the top contributors across multiple seasons. 
 
 Clustering revenue into seasons supports the stability observed in the monthly and month-over-month performance analysis, with no dramatic shifts in product category performance. This suggests that product category performance is not heavily dependent on seasonal shifts but is rather sustained by customer demand.
 
 ### Payment Method
+```
+select payment_method, count(payment_method) as count_paymethod from amazon_sales_dataset
+GROUP BY payment_method ORDER BY count_paymethod DESC;
+```
 
 * Leading Payment Method: Unified Payments Interface (UPI)
 The dataset does not provide sufficient variables, such as customer demographics, transaction success rate, or repeat purchase behaviour, to establish a meaningful relationship between payment methods and sales performance. 
@@ -118,6 +185,14 @@ The dataset does not provide sufficient variables, such as customer demographics
 
 #### Monthly Trends (January 2022-December 2023)
 ![MonthlyTrends](https://github.com/sxalisa003-alt/Amazon_Sales/blob/076725b5724905477f422013dca5195aa83fff00/Images/Monthly%20Trend.png)
+
+```
+select  
+ date_format(order_date, '%b-%Y') as year_and_month,
+ sum(total_revenue) as sum_revenue,
+ count(order_id) as count_orders from amazon_sales_dataset
+ GROUP BY year_and_month ORDER BY year_and_month;
+```
 
 Across 2022 and 2023, we observe consistent seasonal fluctuations rather than drastic shifts in revenue. Both years began with relatively strong revenue performance in January, followed by a noticeable decline in February, and then recovered in March. A gradual slowdown in performance is observed from April until mid-year, then followed by a recovery period around August. We also observe that revenue fluctuates moderately toward year-end with minor improvements or declines.
 The total revenue generated shows slight and sustainable growth from $2 33M in 2022 to $2 38M in 2023, indicating stable YoY performance rather than aggressive growth. 
@@ -129,6 +204,30 @@ Both order volume and revenue maintain a consistent pattern across both years, s
 #### Month-Over-Month Growth (January 2022- December 2023)
 ![MoM](https://github.com/sxalisa003-alt/Amazon_Sales/blob/ea46298537bc06931ca5b1d8776bd71c9e3ec949/Images/MoM.png)
 
+```
+with MonthlySales as (select
+date_format(order_date,'%Y-%m-01') as month_start,
+sum(total_revenue) as curr_month_revenue,
+count(order_id) as curr_order_count
+from amazon_sales_dataset
+GROUP BY month_start
+)
+
+select month_start,curr_month_revenue,curr_order_count,
+
+LAG(curr_month_revenue) OVER (order by month_start) as prev_month_revenue,
+round(
+((curr_month_revenue-LAG(curr_month_revenue) OVER (Order by month_start))/
+LAG(curr_month_revenue) OVER (Order by month_start))*100,2) as revenue_MoM_percent,
+
+LAG(curr_order_count) OVER (ORDER BY month_start) AS prev_order_count,
+round(
+((curr_order_count-LAG(curr_order_count) OVER (Order by month_start))/
+LAG(curr_order_count) OVER (Order by month_start))*100,2) as order_MoM_percent
+
+from MonthlySales
+Order By month_start;
+```
 MoM analysis shows relatively stable growth behaviour across the years, with no extreme spikes or sharp downturns in either revenue or order volume. Instead, performance increases at a moderate pace and follows predictable corrections.
 
 Both 2022 and 2023 show similar growth trends:
@@ -145,6 +244,19 @@ MoM patterns remain consistent across both years, indicating stable operational 
 ### Rating Analysis
 
 ![RatingImpact](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8a94d5abf82a008b67881fa664b392527591e3fe/Images/Ratings%20Impact.png)
+```
+SELECT
+rating,
+SUM(total_revenue) AS total_revenue,
+SUM(quantity_sold) AS units_sold,
+COUNT(order_id) AS orders
+
+FROM amazon_sales_dataset
+
+GROUP BY rating
+
+ORDER BY total_revenue DESC; 
+```
 
 Analysis of product rating against revenue, units sold, and order volume shows that highly rated products do not consistently outperform low-rated products. While ratings of 4,0 and 3,5 rank among the strongest performers across revenue and sales volume, lower ratings such as 1,5 also appear among the top performers in units sold, order volume, and revenue generated.
 
@@ -153,6 +265,23 @@ Lower-rated products among  the top sellers suggest that purchasing decisions ma
 ### Discount Effectiveness Analysis
 
 ![PromoImpact](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8a94d5abf82a008b67881fa664b392527591e3fe/Images/PromoImpact.png)
+
+```
+SELECT 
+    CONCAT(discount_percent, '%') AS discount_percentage,
+    -- Avg price tells us the "class" of products being discounted
+    FORMAT(AVG(price), 2) AS avg_original_price,
+    -- Total Revenue tells us the actual scale of success
+    FORMAT(SUM(total_revenue), 2) AS total_revenue_generated,
+    -- Total Quantity tells us the inventory velocity
+    SUM(quantity_sold) AS total_units_sold,
+    -- Average Discounted Price
+    FORMAT(AVG(discounted_price), 2) AS avg_unit_sale_price
+FROM amazon_sales_dataset 
+GROUP BY discount_percent
+-- Sorting by the number value of the discount
+ORDER BY CAST(discount_percent AS UNSIGNED) ASC;
+```
 
 Moderate discount levels produce stronger sales performance compared to lower discount levels, such as 0% and 10%. Units sold tend to increase as discounts increase, suggesting customers are responsive to price reductions.
 Revenue performance shows a slightly different pattern. Higher discount bands generate more revenue than lower discount bands. The difference between the revenue generated by the different discount tiers is not too significant, which indicates that revenue remains relatively stable even with changes in discounts.
