@@ -34,20 +34,23 @@ This project combines data cleaning, EDA, and dashboard creation to transform ra
    * Is there an optimum discount range that maximizes performance?
   
 
-  ## Tool 
-  * MySQL Workbench
-  * Microsoft Excel
-  * Github
-  * Microsoft PowerPivot
+##  Tools 
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL_Workbench-232F3E?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Microsoft_Excel-107C41?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerPivot-FF9900?style=for-the-badge&logo=microsoft&logoColor=black" />
+</p>
 
-  ## Skills
-  *  Database Management
-  *  Data Modeling
-  *  Data Visualization
-  *  Exploratory Data Analysis
-  *  Reporting
-  *  Dashboard Development
-  
+##  Skills
+<p align="left">
+  <img src="https://img.shields.io/badge/Database_Management-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data_Modeling-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Data_Visualization-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Exploratory_Data_Analysis-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Reporting-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dashboard_Development-FF9900?style=for-the-badge&logoColor=black" />
+</p>
 
   ## Data Integrity & Constraints
 
@@ -119,26 +122,34 @@ To enable seamless interactivity across the dashboard, the multiple query result
 ## Executive Summary Insights
 ###### Check the dashboard above for reference or click to  [download Interactive Dashboard (Excel)](./Amazon%20Sales%20Dashboard.xlsx)
 
+## Overall Business Performance
+<p align="left">
+  <img src="https://img.shields.io/badge/Total_Revenue_Generated-%249%2C882%2C000.44-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Total_Order_Volume-14%2C999-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Total_Units_Sold-45%2C306-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Average_Rating-2.99-FF9900?style=for-the-badge&logoColor=black" />
+</p>
 
-#### Overall Business Performance
-* Total Revenue Generated: $9 882 00,44
-* Total Order Volume: 14 999
-* Total Units Sold: 45 306
-* Average Rating: 2,99
+##  Product Category Performance
+<p align="left">
+  <img src="https://img.shields.io/badge/Top_Revenue-Electronics_(%24801%2C318.61)-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Top_Units_Sold-Fashion_(7%2C678)-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Top_Rating-Books_(3.01)-232F3E?style=for-the-badge&logoColor=white" />
+</p>
 
-#### Product Category Performance 
-* Leading Category in Revenue Generation: Electronics at $801 318,61
-* Leading Category in Units Sold: Fashion at $7 678
-* Leading Category in Average Ratings: Books at 3,01 
+
 ##### Insight
 A category can generate the most revenue without having the highest units sold or average rating. This suggests that revenue is heavily influenced by the pricing of products or product mix rather than sales volume or customer ratings. 
 All categories show a relatively small gap in revenue, units sold, or ratings, indicating a balanced performance across the categories, which may reduce revenue risk by preventing overdependence on a single category.
 
 
-#### Regional Performance Analysis
-* Leading Region in Revenue Distribution: Middle East at $1 202 154,5
-* Leading Region in Order Volume: Middle East at 3804
-* Leading Region in Total Customer Reviews submitted: Middle East at 943371
+## Regional Performance Analysis
+<p align="left">
+  <img src="https://img.shields.io/badge/Top_Revenue_Region-Middle_East_(%241%2C202%2C154.50)-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Top_Order_Volume-Middle_East_(3%2C804)-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Most_Reviews_Submitted-Middle_East_(943%2C371)-232F3E?style=for-the-badge&logoColor=white" />
+</p>
+
 ##### Insight
 The Middle East emerges as the strongest performing region, leading across all key performance indicators, including revenue, order volume, and review count. North America consistently ranks second across all measures, while Europe and Asia remain competitive in the third and fourth positions. 
 The small performance gaps between Europe and Asia suggest a competitive regional landscape where relatively small performance improvements could influence ranking positions, indicating potential growth opportunities in both regions. 
