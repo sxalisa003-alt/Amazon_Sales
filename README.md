@@ -1,3 +1,6 @@
+![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8ff8cd3bac6dee2b0c8c1b331b468e0ebb84b145/Images/AmazonSalesDash.png)
+
+
 # Amazon Sales Project | SQL & Excel Bi
 
 ## Project Overview
@@ -110,11 +113,8 @@ The process concluded with the development of an interactive dashboard designed 
 
 To enable seamless interactivity across the dashboard, the multiple query result tables were transformed from a flat table analysis structure to a relational data model using Excel Power Pivot. I used Power Pivot to create a multi-fact relationship model centered around three lookup tables: dim_Region, dim_ProductCategory, and dim_Year. By establishing 1-to-many relationships, I ensured that a single filter selection would filter across all the different SQL query outputs simultaneously.                      
 
-
 ## Dashboard
-
 ![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8ff8cd3bac6dee2b0c8c1b331b468e0ebb84b145/Images/AmazonSalesDash.png)
-
 
 ## Executive Summary Insights
 ###### Check the dashboard above for reference or click to  [download Interactive Dashboard (Excel)](./Amazon%20Sales%20Dashboard.xlsx)
