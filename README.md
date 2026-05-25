@@ -1,7 +1,9 @@
+# Amazon Sales Project | SQL & Excel Bi
+
+
 ![Dashboard](https://github.com/sxalisa003-alt/Amazon_Sales/blob/8ff8cd3bac6dee2b0c8c1b331b468e0ebb84b145/Images/AmazonSalesDash.png)
 
 
-# Amazon Sales Project | SQL & Excel Bi
 
 ## Project Overview
 This project examines an Amazon Sales dataset to investigate how product categories, regions, payment methods, and time trends affect revenue generation, order volume, and units sold. Through this examination, we will also investigate the connection between elements like ratings, discounts, and the number of reviews with the sales outcomes. The objective is to reveal essential factors and trends that can help in making informed decisions.
