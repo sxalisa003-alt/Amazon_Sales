@@ -8,8 +8,23 @@ As a rapidly scaling e-commerce brand expanding internationally, our leadership 
 
 This project bridges data validation in SQL with interactive visual analytics in Excel to provide those answers.
 
->  **Tech Stack & Skills Used:** SQL (Data Validation & Aggregation), Microsoft Excel, Data Normalization, Power Pivot (Relational Modeling), Dashboard Design, and Business Analysis.
+##  Tools 
+<p align="left">
+  <img src="https://img.shields.io/badge/MySQL_Workbench-232F3E?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Microsoft_Excel-107C41?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerPivot-FF9900?style=for-the-badge&logo=microsoft&logoColor=black" />
+</p>
 
+##  Skills
+<p align="left">
+  <img src="https://img.shields.io/badge/Database_Management-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data_Modeling-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Data_Visualization-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Exploratory_Data_Analysis-FF9900?style=for-the-badge&logoColor=black" />
+  <img src="https://img.shields.io/badge/Reporting-232F3E?style=for-the-badge&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dashboard_Development-FF9900?style=for-the-badge&logoColor=black" />
+</p>
 ---
 
 ##  Interactive Dashboard Preview
