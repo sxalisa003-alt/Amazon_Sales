@@ -69,14 +69,15 @@ To support interactive, multi-chart slicing without flat-file lag, summary data 
 
 Before visualization, an audit script was executed in MySQL to confirm complete calculation integrity, flag anomalies, and check data boundaries.
 
-''' sql
-# 1. Structure & Null Scan
+##### Structure & Null Scan 
+
 SELECT COUNT(*) AS total_rows,
 COUNT(order_id) as order_id_count,
 COUNT(product_id) as product_id_count,
 COUNT(price) as price_count,
 COUNT(total_revenue) as total_revenue_count
-FROM amazonsales_project.amazon_sales_dataset;
+FROM amazonsales_project.amazon_sales_dataset
+'''
  
 # 2. Validate Core Revenue Calculations
 SELECT * FROM amazonsales_project.amazon_sales_dataset
@@ -86,7 +87,7 @@ WHERE total_revenue != discounted_price * quantity_sold;
 SELECT MIN(rating), MAX(rating), MIN(price), MAX(price), MIN(discount_percent), MAX(discount_percent)
 FROM amazonsales_project.amazon_sales_dataset;
 
-# 4. Seasonal & Monthly Growth Aggregation
+Seasonal & Monthly Growth Aggregation
 SELECT 
     YEAR(order_date) AS year,
     CASE
