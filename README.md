@@ -25,7 +25,7 @@ This project bridges data validation in SQL with interactive visual analytics in
   <img src="https://img.shields.io/badge/Reporting-232F3E?style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/Dashboard_Development-FF9900?style=for-the-badge&logoColor=black" />
 </p>
----
+
 
 ##  Interactive Dashboard Preview
 *dynamic dashboard coming soon!*
