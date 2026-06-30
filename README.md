@@ -31,7 +31,7 @@ This project bridges data validation in SQL with interactive visual analytics in
 
 ### Q2: Which product categories drive our revenue, and do customer ratings impact their success?
 * **The Insight:** Revenue risk is well-insulated because performance is balanced across core categories. Surprisingly, **low customer ratings do not stop products from selling.**
-* **The Data:** Electronics, Fashion, and Home & Kitchen remain our top seasonal drivers. However, category revenue is heavily dictated by price point and product mix rather than sheer unit velocity. Products rated **4.0** and **3.5** perform strongly, but lower ratings—even down to **1.5**—frequently rank among the top performers in total revenue and units sold.
+* **The Data:** Electronics, Fashion, and Home & Kitchen remain our top seasonal drivers. However, category revenue is heavily dictated by price point and product mix rather than sheer unit velocity. Products rated **4.0** and **3.5** perform strongly, but lower ratings(even down to **1.5** )frequently rank among the top performers in total revenue and units sold.
 * **Business Action:** Category demand is driven by price and necessity rather than customer satisfaction alone. Sales teams should continue to stock high-demand baseline goods regardless of reviews, while marketing should investigate low-rated top sellers to fix product or service issues before competitors exploit them.
 
 ---
@@ -45,7 +45,7 @@ This project bridges data validation in SQL with interactive visual analytics in
 
 ### Q4: Which discount tiers actually maximize revenue and inventory velocity?
 * **The Insight:** Customer responsiveness to price cuts is non-linear. Massive discount drops aren't always necessary; instead, we see a "bimodal" sweet spot where both small and large discount strategies thrive.
-* **The Data:** A **0% discount** tier underperforms significantly, and a **10% discount** causes a temporary drop in order volume momentum. However, two specific clear-cut winning tiers emerge:
+* **The Data:** A **0% discount** tier underperforms significantly, and a **10% discount** causes a temporary drop in order volume momentum. However, two specific, clear-cut winning tiers emerge:
   
 | Sweet-Spot Discount Tier | Strategy Type | Retail & Inventory Outcome |
 | :--- | :--- | :--- |
@@ -61,50 +61,6 @@ This project bridges data validation in SQL with interactive visual analytics in
 ###  Technical Constraint: Data Ingestion
 To bypass the performance constraints of individual `INSERT INTO` statements within the MySQL Import Wizard (which slows down loading times significantly by parsing individual lines), an optimized subset of **14,999 records** from the original 50,000 record dataset was used for this dashboard iteration. The sample size remains statistically sufficient to trace accurate performance patterns. Moving forward, large-scale ingestion pipelines will switch to the `LOAD DATA INFILE` command for bulk loading.
 
-###  Relational Data Modeling
-To support interactive, multi-chart slicing without flat-file lag, summary data tables were structured into a relational star-schema model using Excel Power Pivot:
-*(schema coming soon)*
-
-## Data Validation Script (SQL)
-
-Before visualization, an audit script was executed in MySQL to confirm complete calculation integrity, flag anomalies, and check data boundaries.
-
-##### Structure & Null Scan 
-
-SELECT COUNT(*) AS total_rows,
-COUNT(order_id) as order_id_count,
-COUNT(product_id) as product_id_count,
-COUNT(price) as price_count,
-COUNT(total_revenue) as total_revenue_count
-FROM amazonsales_project.amazon_sales_dataset
-'''
- 
-# 2. Validate Core Revenue Calculations
-SELECT * FROM amazonsales_project.amazon_sales_dataset
-WHERE total_revenue != discounted_price * quantity_sold;
- 
-# 3. Check Boundary Values and Domain Inbounds
-SELECT MIN(rating), MAX(rating), MIN(price), MAX(price), MIN(discount_percent), MAX(discount_percent)
-FROM amazonsales_project.amazon_sales_dataset;
-
-Seasonal & Monthly Growth Aggregation
-SELECT 
-    YEAR(order_date) AS year,
-    CASE
-        WHEN MONTH(order_date) IN (12,1,2) THEN 'Winter'
-        WHEN MONTH(order_date) IN (3,4,5) THEN 'Spring'
-        WHEN MONTH(order_date) IN (6,7,8) THEN 'Summer'
-        WHEN MONTH(order_date) IN (9,10,11) THEN 'Autumn'
-    END AS season,
-    SUM(total_revenue) AS seasonal_revenue,
-    product_category,
-    COUNT(order_id) AS seasonal_orders
-FROM amazonsales_project.amazon_sales_dataset
-GROUP BY year, season, product_category
-ORDER BY year, seasonal_revenue DESC;
-
-'''
-
 ## Forward-Looking Recommendations
 
 * **Targeted Off-Season Promotions:** Deploy specialized marketing campaigns during historically slower months (February and mid-year) to smooth out the revenue curve.
@@ -114,7 +70,9 @@ ORDER BY year, seasonal_revenue DESC;
 * **Infrastructure Expansion:** Future dashboard iterations would benefit heavily from tracking Customer Demographics, Net Profit Margin percentages, and Customer Retention/Churn metrics.
 
 ---
-###  Technical Deep-Dive & Academic Process
-Are you a technical recruiter or data engineer looking for the step-by-step database logic? 
-Check out the [Full Technical & Process Log (Technical_Log.md)](Technical_Log.md) to view the complete data validation pipeline, query optimization details, and step-by-step methodologies.
+## Technical Deep-Dive & Academic Process
+
+Are you a technical recruiter or data engineer looking for the step-by-step database and report logic?
+Check out the [Full Technical & Process Log(Technical_Log.md)](Technical_Log.md) to view the complete data validation pipeline, query optimization details, and step-by-step methodologies.
+
 ---
