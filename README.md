@@ -31,7 +31,6 @@ This project bridges data validation in SQL with interactive visual analytics in
 *dynamic dashboard coming soon!*
 
 
-*(To stress-test historical performance across specific seasonal windows or transactional categories, utilize the synchronized slicer matrix highlighted on the left panel of dashboard).*
 
 ---
 
