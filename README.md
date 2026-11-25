@@ -3,7 +3,7 @@
 
 
 ##  Project Overview
-This project transforms a flat Amazon sales dataset into a relational business intelligence tool. We evaluate revenue drivers, regional growth trends, and promotional discount strategies to provide executive, marketing, and sales leadership with an actionable blueprint for inventory management and global marketing spend.
+This project transforms a flat Amazon sales dataset into a relational business intelligence tool. I evaluate revenue drivers, regional growth trends, and promotional discount strategies to provide executive, marketing, and sales leadership with an actionable blueprint for inventory management and global marketing spend.
 
 ###  The Business Problem
 As a rapidly scaling e-commerce brand expanding internationally, our leadership teams need answers to core operational questions: Which product categories yield steady returns? How do customer preferences differ across new geographical regions? What is the optimal discount sweet spot to flush inventory without wiping out unit profit margins? 
