@@ -1,4 +1,6 @@
 #  Amazon Sales Performance Dashboard (2022–2023)
+<img width="1382" height="753" alt="Screenshot 2026-11-25 022029" src="https://github.com/user-attachments/assets/20a0170a-890f-49f3-ae77-a5744bd8c8c2" />
+
 
 ##  Project Overview
 This project transforms a flat Amazon sales dataset into a relational business intelligence tool. We evaluate revenue drivers, regional growth trends, and promotional discount strategies to provide executive, marketing, and sales leadership with an actionable blueprint for inventory management and global marketing spend.
@@ -28,7 +30,8 @@ This project bridges data validation in SQL with interactive visual analytics in
 
 
 ##  Interactive Dashboard Preview
-<img width="400" height="219" alt="Screen Recording 2026-11-25 022619" src="https://github.com/user-attachments/assets/c3c864dc-770e-457a-81b8-c9895ef64349" />
+<img width="400" height="219" alt="Screen Recording 2026-11-25 022619 (1)" src="https://github.com/user-attachments/assets/f59cf876-67b4-4b45-bf9e-cba31dda8a78" />
+
 
 
 
