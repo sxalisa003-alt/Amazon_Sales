@@ -28,7 +28,10 @@ This project bridges data validation in SQL with interactive visual analytics in
 
 
 ##  Interactive Dashboard Preview
-*dynamic dashboard coming soon!*
+<img width="400" height="219" alt="Screen Recording 2026-11-25 022619" src="https://github.com/user-attachments/assets/c3c864dc-770e-457a-81b8-c9895ef64349" />
+
+
+
 
 
 
